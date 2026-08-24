@@ -18,7 +18,7 @@ export default function CarroselLogic({ slides }) {
 
   return (
     <>
-      <div className="overflow-hidden relative w-full max-w-4xl">
+      <div className="overflow-hidden relative w-full max-w-3xl">
         <div
           className="flex transition ease-in-out duration-100"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -26,7 +26,6 @@ export default function CarroselLogic({ slides }) {
           {slides.map((slide, index) => {
             return (
               <img
-                alt=""
                 className="w-full shrink-0"
                 key={index}
                 src={slide}
@@ -36,18 +35,24 @@ export default function CarroselLogic({ slides }) {
           })}
         </div>
 
-        <div className="absolute flex px-3 top-0 text-white h-full w-full justify-between item-center">
-          <button onClick={prevSlide}>
+        <div className="absolute flex px-3 top-0 h-full w-full justify-between items-center">
+          <button
+            onClick={prevSlide}
+            className="text-white cursor-pointer text-2xl p-0.5 hover:bg-blue-500 rounded duration-500 ease-in-out"
+          >
             <FaAngleLeft />
           </button>
-          <button onClick={nextSlide}>
+          <button
+            onClick={nextSlide}
+            className="text-white cursor-pointer text-2xl p-0.5 hover:bg-blue-500 rounded duration-500 ease-in-out"
+          >
             <FaAngleRight />
           </button>
         </div>
 
-        <div>
-          <span>
-            {currentSlide + 1} of {slides.length}
+        <div className="flex justify-center items-center mt-2">
+          <span className="text-white bg-blue-500  p-2 w-20 text-center">
+            {currentSlide + 1} / {slides.length}
           </span>
         </div>
       </div>

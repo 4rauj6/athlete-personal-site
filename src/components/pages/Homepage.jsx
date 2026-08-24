@@ -1,4 +1,6 @@
 import CarroselLogic from "../functions/Carrosel";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 
 function Homepage() {
   const slides = [
@@ -10,11 +12,11 @@ function Homepage() {
     <>
       <section>
         <div>
-          <h1>Athlete's name</h1>
+          <h1>Athlete&apos;s name</h1>
           <p>
             Being a winner always made part of his path. Every lose, every
-            failure, every obstacle it was necessary to create what he's are
-            today
+            failure, every obstacle it was necessary to create what he&apos;s
+            are today
           </p>
           <button>Know more</button>
         </div>
@@ -33,7 +35,7 @@ function Homepage() {
             <span>
               <strong>Biografy</strong>
             </span>
-            <p>Knowing deeply inside of Athlete's biografy</p>
+            <p>Knowing deeply inside of Athlete&apos;s biografy</p>
           </div>
 
           <div>
@@ -41,7 +43,7 @@ function Homepage() {
             <span>
               <strong>Biografy</strong>
             </span>
-            <p>Knowing deeply inside of Athlete's biografy</p>
+            <p>Knowing deeply inside of Athlete&apos;s biografy</p>
           </div>
 
           <div>
@@ -49,14 +51,53 @@ function Homepage() {
             <span>
               <strong>Biografy</strong>
             </span>
-            <p>Knowing deeply inside of Athlete's biografy</p>
+            <p>Knowing deeply inside of Athlete&apos;s biografy</p>
           </div>
         </div>
       </section>
 
       <section>
+        <div className="flex self-start p-15 flex-col">
+          <span>Medias - the best moments</span>
+          <h1 className="text-4xl">Gallery</h1>
+        </div>
+
         <div className="flex justify-center ">
           <CarroselLogic slides={slides} />
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <div className="flex self-start p-15 flex-col">
+            <span>
+              Trophies and title - What made part of a succesfull career{" "}
+            </span>
+            <h1 className="text-4xl">Achievements</h1>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <div className="flex self-start p-15 flex-col">
+            <span>Social medias - stay connected </span>
+            <h1 className="text-4xl">Get linked</h1>
+          </div>
+
+          <div className="flex justify-center items-center gap-8 text-6xl ">
+            <div className="cursor-pointer hover:text-blue-500 ease-in-out duration-300">
+              <span>
+                <FaInstagram />
+              </span>
+            </div>
+
+            <div className="cursor-pointer hover:text-blue-500 ease-in-out duration-300">
+              <span>
+                <FaFacebookSquare />
+              </span>
+            </div>
+          </div>
         </div>
       </section>
     </>

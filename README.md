@@ -1,3 +1,3 @@
 # Athlete personal web-site POC
 
-**A personal web-site for athletes. Non financial purposes**
+**This project has non financial purposes. Only for demonstration. If you want a web-site like this, please send me a DM**
