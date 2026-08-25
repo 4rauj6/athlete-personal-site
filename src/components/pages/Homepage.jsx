@@ -1,6 +1,8 @@
 import CarroselLogic from "../functions/Carrosel";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import TitlesDisplay from "../functions/TitleDisplay";
 
 function Homepage() {
   const slides = [
@@ -31,19 +33,21 @@ function Homepage() {
 
         <div>
           <div>
-            <img src="src/assets/react.svg" alt="History page img" />
-            <span>
-              <strong>Biografy</strong>
-            </span>
-            <p>Knowing deeply inside of Athlete&apos;s biografy</p>
+            <Link to="/biografy">
+              <img src="src/assets/react.svg" alt="History page img" />
+              <span>
+                <strong>Biografy</strong>
+              </span>
+              <p>Knowing deeply inside of Athlete&apos;s biografy</p>
+            </Link>
           </div>
 
           <div>
             <img src="" alt="History page img" />
             <span>
-              <strong>Biografy</strong>
+              <strong>Titles</strong>
             </span>
-            <p>Knowing deeply inside of Athlete&apos;s biografy</p>
+            <p></p>
           </div>
 
           <div>
@@ -74,6 +78,12 @@ function Homepage() {
               Trophies and title - What made part of a succesfull career{" "}
             </span>
             <h1 className="text-4xl">Achievements</h1>
+          </div>
+
+          <div>
+            <div>
+              <TitlesDisplay />
+            </div>
           </div>
         </div>
       </section>
