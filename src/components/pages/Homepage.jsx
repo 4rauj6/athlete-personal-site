@@ -95,17 +95,27 @@ function Homepage() {
             <h1 className="text-4xl">Get linked</h1>
           </div>
 
-          <div className="flex justify-center items-center gap-8 text-6xl ">
-            <div className="cursor-pointer hover:text-blue-500 ease-in-out duration-300">
-              <span>
-                <FaInstagram />
-              </span>
+          <div className="relative flex flex-row justify-center items-center gap-10">
+            <div className="absolute top-50 left-120 flex flex-row justify-center items-center gap-8 text-8xl ">
+              <div className="cursor-pointer hover:text-blue-500 ease-in-out duration-300">
+                <span>
+                  <FaInstagram />
+                </span>
+              </div>
+
+              <div className="cursor-pointer hover:text-blue-500 ease-in-out duration-300">
+                <span>
+                  <FaFacebookSquare />
+                </span>
+              </div>
             </div>
 
-            <div className="cursor-pointer hover:text-blue-500 ease-in-out duration-300">
-              <span>
-                <FaFacebookSquare />
-              </span>
+            <div>
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiguelgaspar.eu%2Fassets%2Fdriver%2Fmiguel-hover-fullbody.png&f=1&nofb=1&ipt=9b435ec28ff110d2115cb4f6847a8910b21b3952b36045104502b51d9456ad16"
+                alt=""
+                className="absolute w-150 left-200"
+              />
             </div>
           </div>
         </div>
