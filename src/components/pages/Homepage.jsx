@@ -2,7 +2,6 @@ import CarroselLogic from "../functions/Carrosel";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import TitlesDisplay from "../functions/TitleDisplay";
 
 function Homepage() {
   const slides = [
@@ -11,7 +10,7 @@ function Homepage() {
   ];
 
   return (
-    <>
+    <div>
       <section>
         <div>
           <h1>Athlete&apos;s name</h1>
@@ -63,10 +62,10 @@ function Homepage() {
       <section>
         <div className="flex self-start p-15 flex-col">
           <span>Medias - the best moments</span>
-          <h1 className="text-4xl">Gallery</h1>
+          <h1 className="text-5xl font-kaput">Gallery</h1>
         </div>
 
-        <div className="flex justify-center ">
+        <div className="flex justify-center">
           <CarroselLogic slides={slides} />
         </div>
       </section>
@@ -77,12 +76,57 @@ function Homepage() {
             <span>
               Trophies and title - What made part of a succesfull career{" "}
             </span>
-            <h1 className="text-4xl">Achievements</h1>
-          </div>
+            <h1 className="text-5xl font-kaput mb-20">Achievements</h1>
 
-          <div>
-            <div>
-              <TitlesDisplay />
+            <div className="flex flex-row gap-20 justify-center items-center mb-20">
+              <div className="flex flex-col self-start">
+                <h1>Daytona 400</h1>
+                <span>
+                  1st place secured in Daytona&apos; international speedway
+                </span>
+              </div>
+
+              <div>
+                <img
+                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstaticg.sportskeeda.com%2Feditor%2F2023%2F08%2Faff33-16927068933285-1920.jpg&f=1&nofb=1&ipt=73de700782e74fe9df44adcb71f465dcfee91cb8347d7fc7560cc70600b10b88"
+                  alt="Daytona 400's trophie"
+                  className="w-140"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-row gap-20 justify-center items-center mb-20">
+              <div>
+                <img
+                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstaticg.sportskeeda.com%2Feditor%2F2023%2F08%2Faff33-16927068933285-1920.jpg&f=1&nofb=1&ipt=73de700782e74fe9df44adcb71f465dcfee91cb8347d7fc7560cc70600b10b88"
+                  alt="Daytona 400's trophie"
+                  className="w-140"
+                />
+              </div>
+
+              <div className="flex flex-col self-start">
+                <h1>Daytona 400</h1>
+                <span>
+                  1st place secured in Daytona&apos; international speedway
+                </span>
+              </div>
+            </div>
+
+            <div className="flex flex-row gap-20 justify-center items-center">
+              <div className="flex flex-col self-start">
+                <h1>Daytona 400</h1>
+                <span>
+                  1st place secured in Daytona&apos; international speedway
+                </span>
+              </div>
+
+              <div>
+                <img
+                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstaticg.sportskeeda.com%2Feditor%2F2023%2F08%2Faff33-16927068933285-1920.jpg&f=1&nofb=1&ipt=73de700782e74fe9df44adcb71f465dcfee91cb8347d7fc7560cc70600b10b88"
+                  alt="Daytona 400's trophie"
+                  className="w-140"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -92,11 +136,11 @@ function Homepage() {
         <div>
           <div className="flex self-start p-15 flex-col">
             <span>Social medias - stay connected </span>
-            <h1 className="text-4xl">Get linked</h1>
+            <h1 className="text-5xl font-kaput">Get linked</h1>
           </div>
 
-          <div className="relative flex flex-row justify-center items-center gap-10">
-            <div className="absolute top-50 left-120 flex flex-row justify-center items-center gap-8 text-8xl ">
+          <div className="flex flex-row justify-center items-center">
+            <div className=" flex flex-row justify-center items-center gap-8 text-8xl ">
               <div className="cursor-pointer hover:text-blue-500 ease-in-out duration-300">
                 <span>
                   <FaInstagram />
@@ -109,18 +153,10 @@ function Homepage() {
                 </span>
               </div>
             </div>
-
-            <div>
-              <img
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiguelgaspar.eu%2Fassets%2Fdriver%2Fmiguel-hover-fullbody.png&f=1&nofb=1&ipt=9b435ec28ff110d2115cb4f6847a8910b21b3952b36045104502b51d9456ad16"
-                alt=""
-                className="absolute w-150 left-200"
-              />
-            </div>
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

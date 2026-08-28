@@ -26,7 +26,7 @@ export default function CarroselLogic({ slides }) {
           {slides.map((slide, index) => {
             return (
               <img
-                className="w-full shrink-0"
+                className="w-full shrink-0 rounded-tl rounded-tr rounded-bl"
                 key={index}
                 src={slide}
                 alt={`Slide ${index + 1}`}
@@ -35,23 +35,23 @@ export default function CarroselLogic({ slides }) {
           })}
         </div>
 
-        <div className="absolute flex px-3 top-0 h-full w-full justify-between items-center">
+        <div className="lg:absolute flex px-3 top-65 z-10 h-full w-full justify-center gap-5 items-center">
           <button
             onClick={prevSlide}
-            className="text-white cursor-pointer text-2xl p-0.5 hover:bg-blue-500 rounded duration-500 ease-in-out"
+            className="text-black cursor-pointer text-2xl p-0.5 hover:bg-blue-500 rounded duration-500 ease-in-out"
           >
             <FaAngleLeft />
           </button>
           <button
             onClick={nextSlide}
-            className="text-white cursor-pointer text-2xl p-0.5 hover:bg-blue-500 rounded duration-500 ease-in-out"
+            className="text-black cursor-pointer text-2xl p-0.5 hover:bg-blue-500 rounded duration-500 ease-in-out"
           >
             <FaAngleRight />
           </button>
         </div>
 
-        <div className="flex justify-center items-center mt-2">
-          <span className="text-white bg-blue-500  p-2 w-20 text-center">
+        <div className="flex justify-end items-center">
+          <span className="text-white bg-blue-500  p-2 w-20 text-center rounded-b">
             {currentSlide + 1} / {slides.length}
           </span>
         </div>
