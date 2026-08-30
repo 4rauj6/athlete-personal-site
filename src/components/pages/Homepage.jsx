@@ -2,16 +2,18 @@ import CarroselLogic from "../functions/Carrosel";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Achievements from "./Achievements";
+import AcvmDisplay from "../functions/aacvmDisplay";
 
 function Homepage() {
   const slides = [
-    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.hippopx.com%2Fphotos%2F32%2F522%2F400%2Fauto-racing-nascar-car-sport-thumb.jpg&f=1&nofb=1&ipt=520b453658ab3fe7c9bc1891dc2043863e6e5858b65ad8b3cb873157a2c63328",
-    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.hippopx.com%2Fphotos%2F174%2F473%2F108%2Fauto-racing-nascar-car-sport-thumb.jpg&f=1&nofb=1&ipt=d389c9e5c210f7151925b663b0546335564c3d64b1cc0b3e95f855fe0ca35528",
+    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F20%2FCollege_soccer_yates_iu_v_tulsa_2004.jpg&f=1&nofb=1&ipt=d29ef70e794fbf9328f8ad14a568cfc06837b71bcf344ad967b8651eed7eb6c3",
+    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclamorworld.com%2Fwp-content%2Fuploads%2F2020%2F05%2Fshoesfootball-1350775_1920.jpg&f=1&nofb=1&ipt=63d6d7c1fd884987228bc6a420a58c79c9f7a4972a7a1928087e153b19b3c48b",
   ];
 
   return (
-    <div>
-      <section>
+    <div className="">
+      <section className="text-blue-500 ">
         <div>
           <h1>Athlete&apos;s name</h1>
           <p>
@@ -27,7 +29,7 @@ function Homepage() {
         </div>
       </section>
 
-      <section>
+      <section className="text-blue-500">
         <h1>Knowing more...</h1>
 
         <div>
@@ -73,60 +75,17 @@ function Homepage() {
       <section>
         <div>
           <div className="flex self-start p-15 flex-col">
-            <span>
-              Trophies and title - What made part of a succesfull career{" "}
-            </span>
-            <h1 className="text-5xl font-kaput mb-20">Achievements</h1>
-
-            <div className="flex flex-row gap-20 justify-center items-center mb-20">
-              <div className="flex flex-col self-start">
-                <h1>Daytona 400</h1>
-                <span>
-                  1st place secured in Daytona&apos; international speedway
-                </span>
-              </div>
-
-              <div>
-                <img
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstaticg.sportskeeda.com%2Feditor%2F2023%2F08%2Faff33-16927068933285-1920.jpg&f=1&nofb=1&ipt=73de700782e74fe9df44adcb71f465dcfee91cb8347d7fc7560cc70600b10b88"
-                  alt="Daytona 400's trophie"
-                  className="w-140"
-                />
-              </div>
+            <span>Top achievements</span>
+            <h1 className="text-5xl font-kaput mb-20">Titles</h1>
+            <div>
+              <AcvmDisplay />
             </div>
-
-            <div className="flex flex-row gap-20 justify-center items-center mb-20">
-              <div>
-                <img
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstaticg.sportskeeda.com%2Feditor%2F2023%2F08%2Faff33-16927068933285-1920.jpg&f=1&nofb=1&ipt=73de700782e74fe9df44adcb71f465dcfee91cb8347d7fc7560cc70600b10b88"
-                  alt="Daytona 400's trophie"
-                  className="w-140"
-                />
-              </div>
-
-              <div className="flex flex-col self-start">
-                <h1>Daytona 400</h1>
-                <span>
-                  1st place secured in Daytona&apos; international speedway
-                </span>
-              </div>
-            </div>
-
-            <div className="flex flex-row gap-20 justify-center items-center">
-              <div className="flex flex-col self-start">
-                <h1>Daytona 400</h1>
-                <span>
-                  1st place secured in Daytona&apos; international speedway
-                </span>
-              </div>
-
-              <div>
-                <img
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstaticg.sportskeeda.com%2Feditor%2F2023%2F08%2Faff33-16927068933285-1920.jpg&f=1&nofb=1&ipt=73de700782e74fe9df44adcb71f465dcfee91cb8347d7fc7560cc70600b10b88"
-                  alt="Daytona 400's trophie"
-                  className="w-140"
-                />
-              </div>
+            <div className="flex flex-row justify-center items-center mt-20">
+              <span>
+                <Link to="/achievements" element={Achievements}>
+                  See everything
+                </Link>
+              </span>
             </div>
           </div>
         </div>
@@ -140,7 +99,7 @@ function Homepage() {
           </div>
 
           <div className="flex flex-row justify-center items-center">
-            <div className=" flex flex-row justify-center items-center gap-8 text-8xl ">
+            <div className=" flex flex-row justify-center items-center gap-5 text-7xl ">
               <div className="cursor-pointer hover:text-blue-500 ease-in-out duration-300">
                 <span>
                   <FaInstagram />

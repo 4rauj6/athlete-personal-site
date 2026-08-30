@@ -3,7 +3,6 @@ import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
 
 export default function CarroselLogic({ slides }) {
   const [currentSlide, setCurrentSlide] = useState(0);
-
   function prevSlide() {
     setCurrentSlide((current) =>
       current === 0 ? slides.length - 1 : current - 1,
@@ -12,48 +11,36 @@ export default function CarroselLogic({ slides }) {
 
   function nextSlide() {
     setCurrentSlide((current) =>
-      current === slides.length - 1 ? 0 : current + 1,
+      current === slides.length - 1 ? 1 : current + 1,
     );
   }
 
   return (
     <>
-      <div className="overflow-hidden relative w-full max-w-3xl">
+      <div className="overflow-hidden relative w-full max-w-5xl">
         <div
-          className="flex transition ease-in-out duration-100"
+          className="flex relative transition ease-in-out duration-100"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
         >
-          {slides.map((slide, index) => {
-            return (
+          {slides.map((slide, index) => (
+            <div key={index} className="w-full shrink-0 relative">
               <img
-                className="w-full shrink-0 rounded-tl rounded-tr rounded-bl"
+                className="w-full shrink-0 rounded"
                 key={index}
                 src={slide}
                 alt={`Slide ${index + 1}`}
               />
-            );
-          })}
+            </div>
+          ))}
         </div>
 
-        <div className="lg:absolute flex px-3 top-65 z-10 h-full w-full justify-center gap-5 items-center">
-          <button
-            onClick={prevSlide}
-            className="text-black cursor-pointer text-2xl p-0.5 hover:bg-blue-500 rounded duration-500 ease-in-out"
-          >
+        <div className="lg:absolute flex px-3 top-5 z-10 h-full w-full  text-3xl justify-between gap-10 items-center">
+          <button onClick={prevSlide} className="text-white cursor-pointer">
             <FaAngleLeft />
           </button>
-          <button
-            onClick={nextSlide}
-            className="text-black cursor-pointer text-2xl p-0.5 hover:bg-blue-500 rounded duration-500 ease-in-out"
-          >
+          <button onClick={nextSlide} className="text-white cursor-pointer">
             <FaAngleRight />
           </button>
-        </div>
-
-        <div className="flex justify-end items-center">
-          <span className="text-white bg-blue-500  p-2 w-20 text-center rounded-b">
-            {currentSlide + 1} / {slides.length}
-          </span>
         </div>
       </div>
     </>
