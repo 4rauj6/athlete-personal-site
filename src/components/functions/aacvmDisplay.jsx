@@ -14,7 +14,7 @@ function AcvmDisplay() {
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.independent.co.uk%2F2023%2F11%2F03%2F12%2FnewFile.jpg&f=1&nofb=1&ipt=c9718efc525bf0fb415b42082d153e9209f11187072c99dd73d142704d6cb4d5"
             alt="FA Cup Trophy"
-            className="w-114 shrink-0 rounded "
+            className="w-114 shrink-0 rounded border-blue-500 border-2"
           />
           <div
             className={`flex flex-col bg-blue-500 p-4 transition duration-300 ease-in-out rounded w-full h-25 absolute bottom-0 ${
@@ -39,7 +39,7 @@ function AcvmDisplay() {
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.getfootballnewsgermany.com%2Fassets%2Fbayer-04-leverkusen-v-fc-st-pauli-dfb-cup-quarter-final-1-scaled.jpg&f=1&nofb=1&ipt=fff142d7c17658f327294cd439b6918c3f166d5679a38114fb701ae6e77e4c23"
             alt="DFB Cup Trophy"
-            className="w-114 shrink-0 rounded"
+            className="w-114 shrink-0 rounded border-blue-500 border-2"
           />
           <div
             className={`flex flex-col bg-blue-500 p-8 transition duration-300 ease-in-out rounded  w-full h-25 absolute bottom-0 ${
@@ -66,7 +66,7 @@ function AcvmDisplay() {
           <img
             src="src/assets/efl-championship-trophy-2341761766.jpg"
             alt="FA Cup Trophy"
-            className="w-113 shrink-0 rounded"
+            className="w-113 shrink-0 rounded border-blue-500 border-2"
           />
           <div
             className={`flex flex-col bg-blue-500 p-8 transition duration-300 ease-in-out rounded  w-full h-25 absolute bottom-0 ${

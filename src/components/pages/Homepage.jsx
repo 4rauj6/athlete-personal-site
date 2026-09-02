@@ -26,7 +26,7 @@ function Homepage() {
             failure, every obstacle it was necessary to create what he&apos;s
             are today
           </p>
-          <button className="bg-transparent border-2 border-blue-500 text-blue-500 p-1  transition ease-in-out duration-100 rounded cursor-pointer hover:bg-blue-500 hover:text-white">
+          <button className="bg-blue-500 text-white p-1  transition ease-in-out duration-500 rounded cursor-pointer hover:bg-blue-700 hover:text-white">
             Know more
           </button>
         </div>
@@ -36,7 +36,7 @@ function Homepage() {
         </div>
       </section>
 
-      <section className="">
+      <section>
         <div className="p-15">
           <span className="text-blue-500">Discover more about me here</span>
           <h1 className="text-blue-500 text-5xl font-kaput">Welcome!</h1>
@@ -124,9 +124,9 @@ function Homepage() {
         </div>
       </section>
 
-      <section className="bg-blue-500  h-245 mt-30">
+      <section className="bg-blue-500  h-270 mt-30">
         <div className="flex self-start p-15 flex-col">
-          <span className="text-white">Medias - the best moments</span>
+          <span className="text-white mt-10">Medias - the best moments</span>
           <h1 className="text-5xl font-kaput text-white">Gallery</h1>
         </div>
 
