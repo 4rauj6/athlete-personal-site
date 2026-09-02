@@ -93,7 +93,7 @@ function Biografy() {
 
             <p className="p-4">
               The 2012&apos;s season started tough. The EFL Championship
-              started, 24 teams disputing from 3 seats in the Premier League
+              started. 24 teams disputing from only 3 spots in the Premier League. The Leicester&apos;s team was one of the favorites. Their first five games was a disaster, with only one victory. The supporters was furious. The press was asking the coach about that situation. John&apos;s first  
             </p>
           </div>
         </div>
