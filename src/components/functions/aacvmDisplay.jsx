@@ -20,7 +20,7 @@ function AcvmDisplay() {
             className={`flex flex-col bg-blue-500 p-4 transition duration-300 ease-in-out rounded w-full h-25 absolute bottom-0 ${
               isOnHover === 1
                 ? "translate-y-0  opacity-100"
-                : "translate-y-10 opacity-0"
+                : "translate-y-3 opacity-0"
             }`}
           >
             <div className="flex flex-col justify-center items-center">
@@ -45,7 +45,7 @@ function AcvmDisplay() {
             className={`flex flex-col bg-blue-500 p-8 transition duration-300 ease-in-out rounded  w-full h-25 absolute bottom-0 ${
               isOnHover === 2
                 ? "translate-y-0  opacity-100"
-                : "translate-y-10 opacity-0"
+                : "translate-y-3 opacity-0"
             }`}
           >
             <div className="flex flex-col justify-center items-center h-5">
@@ -72,7 +72,7 @@ function AcvmDisplay() {
             className={`flex flex-col bg-blue-500 p-8 transition duration-300 ease-in-out rounded  w-full h-25 absolute bottom-0 ${
               isOnHover === 3
                 ? "translate-y-0  opacity-100"
-                : "translate-y-10 opacity-0"
+                : "translate-y-3 opacity-0"
             }`}
           >
             <div className="flex flex-col justify-center items-center h-5">
