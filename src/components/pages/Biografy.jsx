@@ -91,9 +91,14 @@ function Biografy() {
               <strong>The first steps on Leicester City</strong>
             </span>
 
-            <p className="p-4">
+            <p className="p-7">
               The 2012&apos;s season started tough. The EFL Championship
-              started. 24 teams disputing from only 3 spots in the Premier League. The Leicester&apos;s team was one of the favorites. Their first five games was a disaster, with only one victory. The supporters was furious. The press was asking the coach about that situation. John&apos;s first  
+              started. 24 teams disputing from only 3 spots in the Premier
+              League. The Leicester&apos;s team was one of the favorites. Their
+              first five games was a disaster, with only one victory. The
+              supporters was furious. The press was asking the coach about that
+              situation. John&apos;s first experience in the new team was not
+              like he expected. The season keep going
             </p>
           </div>
         </div>

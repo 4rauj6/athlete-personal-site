@@ -17,7 +17,7 @@ export default function CarroselLogic({ slides }) {
 
   return (
     <>
-      <div className="overflow-hidden relative w-full max-w-5xl">
+      <div className="overflow-hidden relative max-w-5xl object-contain">
         <div className="text-end text-white mt-5">
           <span>
             {currentSlide + 1} / {slides.length}

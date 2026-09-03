@@ -17,7 +17,7 @@ function AcvmDisplay() {
             className="w-114 shrink-0 rounded border-blue-500 border-2"
           />
           <div
-            className={`flex flex-col bg-blue-500 p-4 transition duration-300 ease-in-out rounded w-full h-25 absolute bottom-0 ${
+            className={`flex flex-col bg-blue-700 p-4 transition duration-300 ease-in-out rounded w-full h-25 absolute bottom-0 ${
               isOnHover === 1
                 ? "translate-y-0  opacity-100"
                 : "translate-y-3 opacity-0"
@@ -42,7 +42,7 @@ function AcvmDisplay() {
             className="w-114 shrink-0 rounded border-blue-500 border-2"
           />
           <div
-            className={`flex flex-col bg-blue-500 p-8 transition duration-300 ease-in-out rounded  w-full h-25 absolute bottom-0 ${
+            className={`flex flex-col bg-blue-700 p-8 transition duration-300 ease-in-out rounded  w-full h-25 absolute bottom-0 ${
               isOnHover === 2
                 ? "translate-y-0  opacity-100"
                 : "translate-y-3 opacity-0"
@@ -69,7 +69,7 @@ function AcvmDisplay() {
             className="w-113 shrink-0 rounded border-blue-500 border-2"
           />
           <div
-            className={`flex flex-col bg-blue-500 p-8 transition duration-300 ease-in-out rounded  w-full h-25 absolute bottom-0 ${
+            className={`flex flex-col bg-blue-700 p-8 transition duration-300 ease-in-out rounded  w-full h-25 absolute bottom-0 ${
               isOnHover === 3
                 ? "translate-y-0  opacity-100"
                 : "translate-y-3 opacity-0"

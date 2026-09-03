@@ -18,28 +18,30 @@ function Homepage() {
 
   return (
     <div className="bg-gray-50">
-      <section className="text-blue-500 ">
-        <div>
-          <h1>John Player</h1>
-          <p>
-            Being a winner always made part of his path. Every lose, every
-            failure, every obstacle it was necessary to create what he&apos;s
-            are today
-          </p>
-          <button className="bg-blue-500 text-white p-1  transition ease-in-out duration-500 rounded cursor-pointer hover:bg-blue-700 hover:text-white">
-            Know more
-          </button>
-        </div>
-
-        <div>
-          <img src="" alt="Athlete's photo" />
+      <section className="text-black ">
+        <div className="flex flex-col relative">
+          <div className="flex flex-row justify-center items-center">
+            <h1 className="self-start text-7xl mt-50 font-kaput absolute left-90">
+              John
+            </h1>
+            <div className="absolute top-0 z-10">
+              <img
+                src="src/assets/homeSoccerPlayer.png"
+                alt="Athlete's photo"
+                className="w-95"
+              />
+            </div>
+            <h1 className="self-start text-7xl mt-50 font-kaput absolute right-55">
+              Player
+            </h1>
+          </div>
         </div>
       </section>
 
-      <section>
+      <section className="mt-220">
         <div className="p-15">
-          <span className="text-blue-500">Discover more about me here</span>
-          <h1 className="text-blue-500 text-5xl font-kaput">Welcome!</h1>
+          <span className="text-black">Discover more about me here</span>
+          <h1 className="text-black text-5xl font-kaput">Welcome!</h1>
         </div>
         <div className="flex flex-row gap-10 object-cover justify-center items-center">
           <div>
@@ -56,7 +58,7 @@ function Homepage() {
                 />
 
                 <div
-                  className={`flex flex-col bg-blue-500 rounded p-4 transition duration-300 ease-in-out w-full h-30 absolute bottom-0 ${isOnHover === 1 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
+                  className={`flex flex-col bg-blue-700 rounded p-4 transition duration-300 ease-in-out w-full h-30 absolute bottom-0 ${isOnHover === 1 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
                 >
                   <div className="text-white">
                     <span className="text-2xl">
@@ -71,28 +73,30 @@ function Homepage() {
           </div>
 
           <div>
-            <div
-              className="relative"
-              onMouseEnter={() => setIsOnHover(2)}
-              onMouseLeave={() => setIsOnHover(null)}
-            >
-              <img
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe6.365dm.de%2F18%2F08%2F1600x900%2Fskysport_de-dfb-pokal-trophe_4391592.jpg%3F20180816140458&f=1&nofb=1&ipt=40e1ae8186bc2dd1be6299be34a1956652adf0608b674f4dc1e9b6dc8e0d035f"
-                alt="History page img"
-                className="w-115 rounded border-blue-500 border-2"
-              />
+            <Link to="/statistics">
               <div
-                className={`flex flex-col bg-blue-500 rounded p-4 transition duration-300 ease-in-out w-full h-30 absolute bottom-0 ${isOnHover === 2 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
+                className="relative"
+                onMouseEnter={() => setIsOnHover(2)}
+                onMouseLeave={() => setIsOnHover(null)}
               >
-                <div className="text-white ">
-                  <span className="text-2xl">
-                    <strong>Titles</strong>
-                  </span>
-                  <p>Knowing deeply inside of Athlete&apos;s titles</p>
-                  <p>Click to know more about it</p>
+                <img
+                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe6.365dm.de%2F18%2F08%2F1600x900%2Fskysport_de-dfb-pokal-trophe_4391592.jpg%3F20180816140458&f=1&nofb=1&ipt=40e1ae8186bc2dd1be6299be34a1956652adf0608b674f4dc1e9b6dc8e0d035f"
+                  alt="History page img"
+                  className="w-115 rounded border-blue-500 border-2"
+                />
+                <div
+                  className={`flex flex-col bg-blue-700 rounded p-4 transition duration-300 ease-in-out w-full h-30 absolute bottom-0 ${isOnHover === 2 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
+                >
+                  <div className="text-white ">
+                    <span className="text-2xl">
+                      <strong>Statistics</strong>
+                    </span>
+                    <p>See the statistics of John&apos;s career</p>
+                    <p>Click to know more about it</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div>
@@ -107,7 +111,7 @@ function Homepage() {
                 className="w-105 rounded border-blue-500 border-2"
               />
               <div
-                className={`pointer-events-none flex flex-col bg-blue-500 rounded p-4 transition duration-300 ease-in-out w-full h-30 absolute bottom-0 ${isOnHover === 3 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
+                className={`pointer-events-none flex flex-col bg-blue-700 rounded p-4 transition duration-300 ease-in-out w-full h-30 absolute bottom-0 ${isOnHover === 3 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
               >
                 <div className="text-white">
                   <span className="text-2xl">
@@ -124,7 +128,7 @@ function Homepage() {
         </div>
       </section>
 
-      <section className="bg-blue-500  h-270 mt-30">
+      <section className="bg-blue-700  h-280 mt-30">
         <div className="flex self-start p-15 flex-col">
           <span className="text-white mt-10">Medias - the best moments</span>
           <h1 className="text-5xl font-kaput text-white">Gallery</h1>
@@ -135,7 +139,7 @@ function Homepage() {
         </div>
       </section>
 
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 mt-20">
         <div>
           <div className="flex self-start p-15 flex-col">
             <span>Top achievements</span>
@@ -163,13 +167,13 @@ function Homepage() {
 
           <div className="flex flex-row justify-center items-center">
             <div className=" flex flex-row justify-center items-center gap-5 text-7xl ">
-              <div className="cursor-pointer hover:text-white ease-in-out duration-300">
+              <div className="cursor-pointer hover:text-blue-700 ease-in-out duration-300">
                 <span>
                   <FaInstagram />
                 </span>
               </div>
 
-              <div className="cursor-pointer hover:text-white ease-in-out duration-300">
+              <div className="cursor-pointer hover:text-blue-700 ease-in-out duration-300">
                 <span>
                   <FaFacebookSquare />
                 </span>
