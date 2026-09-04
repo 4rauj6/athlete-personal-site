@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         kaput: ['"Kaput Black"', "sans-serif"],
+        sora: ['"Sora"', "sans-sarif"],  
       },
     },
   },
