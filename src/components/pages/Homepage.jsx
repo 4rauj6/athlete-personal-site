@@ -17,11 +17,11 @@ function Homepage() {
   const [isOnHover, setIsOnHover] = useState(null);
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-black">
       <section className="text-black ">
         <div className="flex flex-col relative">
           <div className="flex flex-row justify-center items-center">
-            <h1 className="self-start text-7xl mt-50 font-kaput absolute left-90">
+            <h1 className="self-start text-7xl mt-50 font-kaput text-white absolute left-90">
               John
             </h1>
             <div className="absolute top-0 z-10">
@@ -31,7 +31,7 @@ function Homepage() {
                 className="w-95"
               />
             </div>
-            <h1 className="self-start text-7xl mt-50 font-kaput absolute right-55">
+            <h1 className="self-start text-7xl mt-50 font-kaput text-red-500 absolute right-55">
               Player
             </h1>
           </div>
@@ -39,9 +39,9 @@ function Homepage() {
       </section>
 
       <section className="mt-220">
-        <div className="p-15">
-          <span className="text-black">Discover more about me here</span>
-          <h1 className="text-black text-5xl font-kaput">Welcome!</h1>
+        <div className="p-15 text-red-500">
+          <span>Discover more about me here</span>
+          <h1 className="text-5xl font-kaput">WELCOME</h1>
         </div>
         <div className="flex flex-row gap-10 object-cover justify-center items-center">
           <div>
@@ -54,18 +54,18 @@ function Homepage() {
                 <img
                   src="src/assets/back-view-of-a-latin-american-soccer-player-holding-a-soccer-ball-while-walking-at-the-soccer-573744466.jpg"
                   alt="History page img"
-                  className="w-105 rounded border-blue-500 border-2"
+                  className="w-105 rounded border-red-500 border-2"
                 />
 
                 <div
-                  className={`flex flex-col bg-blue-700 rounded p-4 transition duration-300 ease-in-out w-full h-30 absolute bottom-0 ${isOnHover === 1 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
+                  className={`flex flex-col bg-red-500 rounded p-4 transition duration-300 ease-in-out w-full h-30 absolute bottom-0 ${isOnHover === 1 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
                 >
                   <div className="text-white">
                     <span className="text-2xl">
                       <strong>Biografy</strong>
                     </span>
-                    <p>Knowing deeply inside of my life</p>
-                    <p>Click to know more about it</p>
+                    <p className="text-gray-200">Knowing deeply inside of my life</p>
+                    <p className="text-gray-200">Click to know more about it</p>
                   </div>
                 </div>
               </div>
@@ -82,10 +82,10 @@ function Homepage() {
                 <img
                   src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe6.365dm.de%2F18%2F08%2F1600x900%2Fskysport_de-dfb-pokal-trophe_4391592.jpg%3F20180816140458&f=1&nofb=1&ipt=40e1ae8186bc2dd1be6299be34a1956652adf0608b674f4dc1e9b6dc8e0d035f"
                   alt="History page img"
-                  className="w-115 rounded border-blue-500 border-2"
+                  className="w-115 rounded border-red-500 border-2"
                 />
                 <div
-                  className={`flex flex-col bg-blue-700 rounded p-4 transition duration-300 ease-in-out w-full h-30 absolute bottom-0 ${isOnHover === 2 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
+                  className={`flex flex-col bg-red-500 rounded p-4 transition duration-300 ease-in-out w-full h-30 absolute bottom-0 ${isOnHover === 2 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
                 >
                   <div className="text-white ">
                     <span className="text-2xl">
@@ -108,10 +108,10 @@ function Homepage() {
               <img
                 src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.awbclaw.co.uk%2Fwp-content%2Fuploads%2F2023%2F04%2FCharity.jpg&f=1&nofb=1&ipt=751bdaa0bee051019114dfde1e5c6dc8fab500fcdb2c8ad6efe6b41d5895db04"
                 alt="History page img"
-                className="w-105 rounded border-blue-500 border-2"
+                className="w-105 rounded border-red-500 border-2"
               />
               <div
-                className={`pointer-events-none flex flex-col bg-blue-700 rounded p-4 transition duration-300 ease-in-out w-full h-30 absolute bottom-0 ${isOnHover === 3 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
+                className={`pointer-events-none flex flex-col bg-red-500 rounded p-4 transition duration-300 ease-in-out w-full h-30 absolute bottom-0 ${isOnHover === 3 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
               >
                 <div className="text-white">
                   <span className="text-2xl">
@@ -128,10 +128,10 @@ function Homepage() {
         </div>
       </section>
 
-      <section className="bg-blue-700  h-280 mt-30">
+      <section className="bg-red-500  h-280 mt-30">
         <div className="flex self-start p-15 flex-col">
-          <span className="text-white mt-10">Medias - the best moments</span>
-          <h1 className="text-5xl font-kaput text-white">Gallery</h1>
+          <span className="text-black mt-10">Medias - the best moments</span>
+          <h1 className="text-5xl font-kaput text-black">GALLERY</h1>
         </div>
 
         <div className="flex justify-center">
@@ -139,11 +139,11 @@ function Homepage() {
         </div>
       </section>
 
-      <section className="bg-gray-50 mt-20">
+      <section className=" mt-20 h-210">
         <div>
-          <div className="flex self-start p-15 flex-col">
+          <div className="flex self-start p-15 flex-col text-red-500">
             <span>Top achievements</span>
-            <h1 className="text-5xl font-kaput mb-20">Titles</h1>
+            <h1 className="text-5xl font-kaput mb-20">TITLES</h1>
             <div>
               <AcvmDisplay />
             </div>
@@ -158,11 +158,11 @@ function Homepage() {
         </div>
       </section>
 
-      <section className="">
+      <section className="bg-red-500">
         <div>
           <div className="flex self-start p-15 flex-col">
             <span>Social medias - stay connected </span>
-            <h1 className="text-5xl font-kaput">Get linked</h1>
+            <h1 className="text-5xl font-kaput">GET LINKED</h1>
           </div>
 
           <div className="flex flex-row justify-center items-center">

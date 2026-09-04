@@ -42,13 +42,13 @@ export default function CarroselLogic({ slides }) {
         <div className="absolute flex px-3 top-0 z-10 h-full w-full  text-3xl justify-between gap-10 items-center">
           <button
             onClick={prevSlide}
-            className="text-blue-400 cursor-pointer transiton ease-in-out duration-100 hover:text-blue-700"
+            className="text-red-500 cursor-pointer transiton ease-in-out duration-100 hover:text-black-700 hover:bg-red-500 rounded hover:text-white hover:scale-110"
           >
             <FaAngleLeft />
           </button>
           <button
             onClick={nextSlide}
-            className="text-blue-400 cursor-pointer transiton ease-in-out duration-100 hover:text-blue-700"
+            className="text-red-500 cursor-pointer transiton ease-in-out duration-100 hover:text-black-700 hover:bg-red-500 rounded hover:text-white hover:scale-110"
           >
             <FaAngleRight />
           </button>
